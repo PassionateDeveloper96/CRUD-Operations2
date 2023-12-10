@@ -19,8 +19,8 @@ public class EmployeeController {
 
 
     @RequestMapping("/testing")
-    public String test() {
-        return "Test API works";
+    public String test(@RequestParam String tester) {
+        return tester + "Test API works";
     }
 
     @RequestMapping("/addEmployee")
